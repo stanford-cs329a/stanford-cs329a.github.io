@@ -11,6 +11,37 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      .navbar {
+          margin-bottom: 0; 
+      }
+
+      .sec {
+          padding: 10px 0;  
+          margin-bottom: 0;  
+      }
+
+      #intro {
+          margin-top: 10px;  
+      }
+
+      .course-title {
+          padding: 15px 0;
+          background-color: #8C1515;  /* Stanford red */
+          color: white;
+          margin-bottom: 10px;  
+      }
+
+      .course-title h1 {
+          margin: 0;
+          font-size: 24px;
+      }
+
+      h2 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -23,11 +54,20 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#intro">Overview</a></li>
+            <li><a href="#people">Staff</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#grading">Grading</a></li>
+            <li><a href="#policies">Policies</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     
-    <!-- Intro -->
+
     <div class="container sec" id="intro">
         <h2>Course Overview</h2>
         <p>
@@ -37,9 +77,8 @@
         solve interesting and challenging real-world problems.
         </p>
       </div>
-      <!-- Staff Info -->
+
       <div class="container sec" id="people">
-        <!-- <div class="row"> -->
         <div class="col">
           <h2>Course Staff</h2>
           <div class="instructor">
@@ -83,8 +122,6 @@
             </ul>
           </div>
         </div>
-        <!-- Schedule -->
-        <!-- Note the margin-top:-20px and the <br> serve to make the #schedule hyperlink display correctly (with the h2 header visible) -->
         <div class="container sec" id="schedule" style="margin-top:-20px">
           <br>
           <h2>Schedule</h2>
@@ -234,15 +271,79 @@
             </tbody>
           </table>
         </div>
-        <!-- Grading -->
-        <div class="container sec" id="grading">
-          <h2>Grading</h2>
-          <p>Grading details will be updated soon.</p>
-        </div>
       </div>
     </div>
-    <!-- jQuery and Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <div class="container sec" id="grading">
+      <h2>Grading</h2>
+      <ul>
+        <li><b>In-class paper presentation (15%)</b></li>
+        <li><b>Weekly paper discussion questions (5%)</b>
+          <ul><li>Due 10pm the night before class</li></ul>
+        </li>
+        <li><b>Project Proposal (10%)</b>
+          <ul><li>Due January 24 at 9pm</li></ul>
+        </li>
+        <li><b>Project Milestone (20%)</b>
+          <ul>
+            <li>Due February 21 at 9pm</li>
+            <li>5-minute presentation (5%)</li>
+            <li>Report (15%)</li>
+          </ul>
+        </li>
+        <li><b>Final Report Writeup (40%)</b>
+          <ul>
+            <li>Due March 17 at 9pm (late days cannot be used)</li>
+            <li>Write up (30%)</li>
+            <li>Artifact (10%) - code, model, evaluation dataset</li>
+          </ul>
+        </li>
+        <li><b>Final Poster Presentation (10%)</b>
+          <ul><li>March 19 (3-6pm)</li></ul>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <div class="container sec" id="student-lectures">
+      <h2>Student Lectures</h2>
+      <p>Most weeks there will be at least one Student Lecture. Each Student Lecture will consist of a team of 2 to 3 students 
+      that are responsible for reading all of the suggested reading and presenting a graded survey presentation (~45 Minutes).</p>
+      <p>Format: 45 minute presentations followed by 15-20 minute Q&A sessions.</p>
+    </div>
+
+    <div class="container sec" id="research-projects">
+      <h2>Research Projects</h2>
+      <p>As a graduate seminar, research is a big part of the class. Students will work in teams of 2 to 3 to complete original 
+      research. These projects should be broadly around agentic AI. Students will receive API credits to support their 
+      development work.</p>
+
+      <p>Your final report is due on <b>March 17, 9 p.m.</b>.</p>
+    </div>
+
+    <div class="container sec" id="policies">
+      <h2>Course Policies</h2>
+      
+      <h3>Late Policy</h3>
+      <ul>
+        <li>All students have 4 free late days for the quarter.</li>
+        <li>You may use up to 2 late days per assignment with no penalty.</li>
+        <li>Late days can be used for assignments, project proposal, and project milestone.</li>
+        <li>Late days cannot be used for the final project report.</li>
+        <li>There will be a 25% penalty for each additional late day.</li>
+        <li>No exceptions to this policy.</li>
+      </ul>
+
+      <h3>Audit Policy</h3>
+      <p>Audits are not allowed for this course.</p>
+
+      <h3>Communication with Course Staff</h3>
+      <ul>
+        <li>Please read the course documentation carefully before asking general questions.</li>
+        <li>Questions should be asked during office hours or on EdStem.</li>
+      </ul>
+    </div>
   </body>
 </html>

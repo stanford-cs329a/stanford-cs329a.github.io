@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS329A Detailed Syllabus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        .table th, .table td {
+            padding: 15px;
+            vertical-align: top;
+        }
+        .reading-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">← Back to Course Page</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 60px">
+        <h1>Detailed Course Syllabus</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Lecture</th>
+                    <th>Main Readings</th>
+                    <th>Additional Readings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan 6</td>
+                    <td>Course overview, scaling laws, emerging behavior, agent examples</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jan 10</td>
+                    <td>Test Time Scaling</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Large Language Monkeys</li>
+                            <li>[2] Archon</li>
+                            <li>[3] Optimal test scaling (Snell et al. 2024)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>Inference Scaling (Y. Wu et al. 2024)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan 13</td>
+                    <td>Self-improvement Techniques: Verifiers</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Training Verifiers to Solve Math Word Problems (Cobbe et al)</li>
+                            <li>[2] Let's Verify step by step (Lightman et al. 2023)</li>
+                            <li>[3] Process Reward (Uesato et al. 2022)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>Math-Shephard</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan 17</td>
+                    <td>Self-improvement Techniques with RL</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] STaR (Zelikman et al. 2022)</li>
+                            <li>[2] Constitutional AI: Harmlessness from AI Feedback</li>
+                            <li>[3] ReST-EM (Singh et al. 2023)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>WebGPT (Nakano et al. 2021)</li>
+                            <li>ReST (Gulcehre et al. 2023)</li>
+                            <li>Quiet-STaR</li>
+                            <li>VinePPO: Unlocking RL Potential For LLM Reasoning</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan 20</td>
+                    <td>MLK day - No Class</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jan 24</td>
+                    <td>Self-improvement with search</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Expert Iteration (Anthony, Tian, and Barber 2017)</li>
+                            <li>[2] AlphaZero</li>
+                            <li>[3] AlphaCode 2</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jan 27</td>
+                    <td>AI research assistant</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] SUPER</li>
+                            <li>[2] AI Scientist</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jan 31</td>
+                    <td>Unifying Reasoning and Tool use/Actions in LLMs</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] ReACT</li>
+                            <li>[2] Toolformer: Language Models Can Teach Themselves to Use Tools</li>
+                            <li>[3] Gorilla: Large Language Model Connected with Massive APIs</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>RLEF (Meta): Grounding Code LLMs in Execution Feedback with Reinforcement Learning</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feb 3</td>
+                    <td>Reasoning/Actions across modalities (Web agents, Android Agents)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Feb 7</td>
+                    <td>Eval benchmarks: capabilities</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] SWEbench-Verified</li>
+                            <li>[2] MLE-bench</li>
+                            <li>[3] VisualWeb Arena</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>Cybench</li>
+                            <li>SWE-bench Multimodal</li>
+                            <li>RE-Bench</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feb 10</td>
+                    <td>Planning and Multi-Step Reasoning 1/2</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Exploring and Benchmarking the Planning Capabilities of Large Language Models</li>
+                            <li>[2] Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models</li>
+                            <li>[3] AlphaZero-like (Feng et al. 2023)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>Amortizing Intractable Inference in Large Language Models</li>
+                            <li>Improving the Efficiency of Test-Time Search in LLMs with Backtracking</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feb 14</td>
+                    <td>AI coding agents</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Replit</li>
+                            <li>[2] SWE-agent</li>
+                            <li>[3] SWE-search</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Feb 17</td>
+                    <td>President's day - No Class</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Feb 21</td>
+                    <td>Midterm Progress Presentations</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Feb 24</td>
+                    <td>Retrieval augmentation/Long Context</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Can Long-Context Language Models Subsume Retrieval, RAG, SQL, and More?</li>
+                            <li>[2] SimpleQA</li>
+                            <li>[3] Self-DC: When to retrieve and When to generate?</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>Promptagator: Few-shot dense retrieval from 8 examples</li>
+                            <li>CRAG</li>
+                            <li>CHESS: Contextual Harnessing for Efficient SQL Synthesis</li>
+                            <li>Semantic Operators: A Declarative Model for Rich, AI-based Analytics Over Text Data</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Feb 28</td>
+                    <td>Orchestration tools: AutoGen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mar 3</td>
+                    <td>Memory; State Management; Planning</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] Stream of Search (Gandhi et al. 2024)</li>
+                            <li>[2] LLMs Still Can't Plan; Can LRMs?</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mar 7</td>
+                    <td>Multi-agent systems & Future research areas</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mar 10</td>
+                    <td>TBD (Security/Reliability)</td>
+                    <td>
+                        <ul class="reading-list">
+                            <li>[1] AgentDojo</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mar 14</td>
+                    <td>TBD</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html> 

@@ -135,18 +135,14 @@
           <br>
           <h2>Schedule</h2>
 
-          <table class="table">
-            <colgroup>
-              <col style="width:5%">
-              <col style="width:15%">
-              <col style="width:45%">
-              <col style="width:30%">
-            </colgroup>
+          <div class="table-responsive">
+              <table class="table table-bordered">
             <thead>
               <tr class="active">
                 <th>#</th>
                 <th>Date</th>
                 <th>Description</th>
+                <th>Paper Readings</th>
                 <th>Events</th>
               </tr>
             </thead>
@@ -156,23 +152,43 @@
                 <td> Mon January 6 </td>
                 <td> Course Overview </td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 2 </td>
                 <td>Fri January 10</td>
                 <td> Test-time Compute Scaling </td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2407.21787">Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (Brown et al. 2024)</a></li>
+                                  <li><a href="https://www.arxiv.org/abs/2409.15254">Archon: An Architecture Search Framework for Inference-Time Techniques (Saad-Falcon et al. 2024) </a></li>
+                                  <li><a href="https://arxiv.org/abs/2408.03314">Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Snell et al. 2024)</a></li>
+                              </ul>
+                          </td>
                 <td></td>
               </tr>
               <tr>
                 <td> 3 </td>
                 <td> Mon January 13 </td>
                 <td> Self-Improvement Techniques with Verifiers</td>
+                <td>
+                              <ul class="reading-list">
+                                <li><a href="https://arxiv.org/abs/2110.14168">Training Verifiers to Solve Math Word Problems (Cobbe et al. 2021) </a></li>
+                                <li><a href="https://arxiv.org/abs/2305.20050">Let's Verify step by step (Lightman et al. 2023)</a></li>
+                                 <li><a href="https://arxiv.org/abs/2312.08935">Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations (Wang et al. 2023)</a></li>
+                              </ul>
                 <td></td>
               </tr>
               <tr>
                 <td> 4 </td>
                 <td>Fri January 17</td>
                 <td> Self-Improvement Techniques with RL</td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2203.14465">STaR: Bootstrapping Reasoning With Reasoning (Zelikman et al. 2022)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2212.08073">Constitutional AI: Harmlessness from AI Feedback (Bai et al. 2022)</a></li>
+                              </ul>
+                          </td>
                 <td></td>
               </tr>
               <tr>
@@ -180,35 +196,64 @@
                 <td> Mon January 20 </td>
                 <td>MLK day - no classes</td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 5 </td>
                 <td> Fri January 24 </td>
                 <td>Self-Improvement Techniques with Search: AlphaZero, AlphaCode...</td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/1705.08439">Thinking Fast and Slow with Deep Learning and Tree Search (Anthony et al. 2017)</a></li>
+                                  <li><a href="https://arxiv.org/abs/1712.01815">Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm (Silver et al. 2017)</a></li>
+                                  <li><a href="https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf">AlphaCode 2 Technical Report (2023)</a></li>
+                              </ul>
+                          </td>
+
                 <td>Project proposal <b><font color="red">due</font></b>, Homework 1 released</td>
               </tr>
               <tr>
                 <td> 6 </td>
                 <td>Mon January 27 </td>
-                <td><font color="blue">Invited Talk on The AI Scientist (Prof. Jeff Clune)</font></td>
+                <td><font color="blue">The AI Scientist (Guest Lecture: Prof. Jeff Clune)</font></td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2408.06292">The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)</a></li>
+                              </ul>
+                          </td>
                 <td></td>
               </tr>
               <tr>
                 <td> 7 </td>
                 <td>Fri January 31</td>
                 <td>Augmenting LLMs with Tool use/Actions</td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al. 2022)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2302.04761">Toolformer: Language Models Can Teach Themselves to Use Tools (Schick et al. 2023)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2410.02089">RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning</a></li>
+                              </ul>
+                          </td>
                 <td></td>
               </tr>
               <tr>
                 <td> 8 </td>
                 <td>Mon February 3</td>
                 <td>Planning and Multi-Step Reasoning</td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2310.04406">Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (Zhou et al. 2023)</a></li>
+                                   <li><a href="https://arxiv.org/abs/2404.03683">Stream of Search (SoS): Learning to Search in Language (Gandhi et al. 2024)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2409.13373">LLMs Still Can't Plan; Can LRMs? A Preliminary Evaluation of OpenAI's o1 on PlanBench (Valmeekam et al. 2024)</a></li>
+                              </ul>
+                          </td>
                 <td>Homework 1 <b><font color="red">due</font></b>, Homework 2 released </td>
               </tr>
               <tr>
                 <td> 9 </td>
                 <td>Fri February 7</td>
                 <td>Evaluation Benchmarks</td>
+                <td></td>
                 <td></td>
               </tr>
               <tr>
@@ -220,7 +265,13 @@
               <tr>
                 <td> 11 </td>
                 <td>Fri February 14</td>
-                <td><font color="blue">Invited Talk on AI Coding Agents (Replit)</font></td>
+                <td><font color="blue">AI Coding Agents (Guest Lecture: Michele Castata, Replit)</font></td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2405.15793">SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (Yang et al. 2024)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2410.20285">SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (Antoniades et al. 2024)</a></li>
+                              </ul>
+                          </td>
                 <td>Homework 2 <b><font color="red">due</font></b></td>
               </tr>
               <tr>
@@ -228,29 +279,46 @@
                 <td>Mon February 17</td>
                 <td>President's day - no classes</td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 12 </td>
                 <td>Fri February 21</td>
                 <td><font color="green">Midterm Progress Presentations</font></td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 13 </td>
                 <td>Mon February 24</td>
                 <td><font color="green">Midterm Progress Presentations</font></td>
+                <td></td>
                 <td>Midterm Progress Presentation submission to Gradescope</td>
               </tr>
               <tr>
                 <td> 14 </td>
                 <td>Fri February 28</td>
                 <td><font color="blue">Invited Talk on Agent Orchestration Frameworks (Autogen)</font></td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2308.08155">AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation (Wu et al. 2023)</a></li>
+                              </ul>
+                          </td>
                 <td></td>
               </tr>
               <tr>
                 <td> 15 </td>
                 <td>Mon March 3</td>
                 <td>Augmenting LLMs with Retrieval/Memory</td>
+                <td>
+                              <ul class="reading-list">
+                                  <li><a href="https://arxiv.org/abs/2406.13121">Can Long-Context Language Models Subsume Retrieval, RAG, SQL, and More? (Lee et al. 2024)</a></li>
+                                 <li><a href="https://www.anthropic.com/news/contextual-retrieval">Contextual Retrieval (Anthropic, 2024)</a></li>
+                                  <li><a href="https://arxiv.org/abs/2310.08560">MemGPT: Towards LLMs as Operating Systems (Packer et al, 2023)</a></li>
+                                 
+                              </ul>
+                          </td>
+
                 <td></td>
               </tr>
               <tr>
@@ -258,17 +326,20 @@
                 <td>Fri March 7</td>
                 <td>Multi-agent Systems</td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 17 </td>
                 <td>Mon March 10</td>
                 <td>Future Research Areas (TBD)</td>
                 <td></td>
+                <td></td>
               </tr>
               <tr>
                 <td> 18 </td>
                 <td>Fri March 14</td>
                 <td><font color="blue">Invited Talk</font></td>
+                <td></td>
                 <td></td>
               </tr>
               <tr>

@@ -41,6 +41,73 @@
           margin-top: 10px;
           margin-bottom: 10px;
       }
+      .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+.reading-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.reading-list li {
+    margin-bottom: 0.5rem;
+}
+
+.guest-lecture-cell {
+    color: #0066cc;
+}
+
+.lecture-title {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.lecture-subtitle {
+    display: block;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+      .deadline {
+    color: #dc3545;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.secondary-event {
+    display: block;
+}
+      .no-class {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.no-class td {
+    padding: 0.75rem 1rem;
+}
+      .presentation {
+    color: #198754;  /* Bootstrap green */
+}
     </style>
   </head>
   <body>
@@ -136,20 +203,13 @@
 
           <div class="table-responsive">
               <table class="table table-bordered">
-              <colgroup>
-              <col style="width:2%">
-              <col style="width:10%">
-              <col style="width:30%">
-              <col style="width:35%">
-              <col style="width:23%">
-              </colgroup>
             <thead>
               <tr class="active">
-                <th>#</th>
-                <th>Date</th>
-                <th>Description</th>
-                <th>Paper Readings</th>
-                <th>Events</th>
+                <th style="width: 2%">#</th>
+                <th style="width: 10%">Date</th>
+                <th style="width: 27%">Description</th>
+                <th style="width: 38%">Paper Readings</th>
+                <th style="width: 23%">Events</th>
               </tr>
             </thead>
             <tbody>
@@ -197,10 +257,10 @@
                           </td>
                 <td></td>
               </tr>
-              <tr>
+              <tr class="no-class">
                 <td></td>
                 <td> Mon Jan 20 </td>
-                <td>MLK day - no classes</td>
+                <td>MLK Day - No classes</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -216,12 +276,18 @@
                               </ul>
                           </td>
 
-                <td>Project proposal <b><font color="red">due</font></b>, Homework 1 released</td>
+               <td>
+                    <span class="deadline">Project proposal due</span>
+                    <span class="secondary-event">Homework 1 released</span>
+                </td>              
               </tr>
               <tr>
                 <td> 6 </td>
                 <td>Mon Jan 27 </td>
-                <td><font color="blue">The AI Scientist (Guest Lecture: Prof. Jeff Clune)</font></td>
+                <td class="guest-lecture-cell">
+                    <span class="lecture-title">The AI Scientist</span>
+                    <span class="lecture-subtitle">(Guest Lecture: Prof. Jeff Clune)</span>
+                </td>
                 <td>
                               <ul class="reading-list">
                                   <li><a href="https://arxiv.org/abs/2408.06292">The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery (Lu et al. 2024)</a></li>
@@ -253,8 +319,11 @@
                                   <li><a href="https://arxiv.org/abs/2409.13373">LLMs Still Can't Plan; Can LRMs? A Preliminary Evaluation of OpenAI's o1 on PlanBench (Valmeekam et al. 2024)</a></li>
                               </ul>
                           </td>
-                <td>Homework 1 <b><font color="red">due</font></b>, Homework 2 released </td>
-              </tr>
+                 <td>
+                    <span class="deadline">Homework 1 due</span>
+                    <span class="secondary-event">Homework 2 released</span>
+                </td>  
+                         </tr>
               <tr>
                 <td> 9 </td>
                 <td>Fri Feb 7</td>
@@ -265,47 +334,61 @@
               <tr>
                 <td> 10 </td>
                 <td>Mon Feb 10</td>
-                <td> <font color="blue">Invited Talk on Multimodal LLMs & Computer Use Agents</font></td>
-                <td></td>
+                <td class="guest-lecture-cell">
+                    <span class="lecture-title">Multimodal LLMs & Computer Use Agents</span>
+                    <span class="lecture-subtitle">(Guest Lecture)</span>
+                </td>
+               <td></td>
               </tr>
               <tr>
                 <td> 11 </td>
                 <td>Fri Feb 14</td>
-                <td><font color="blue">AI Coding Agents (Guest Lecture: Michele Castata, Replit)</font></td>
-                <td>
+                <td class="guest-lecture-cell">
+                    <span class="lecture-title">AI Coding Agents</span>
+                    <span class="lecture-subtitle">(Guest Lecture: Michele Castata, Replit)</span>
+                </td>
+                   <td>
                               <ul class="reading-list">
                                   <li><a href="https://arxiv.org/abs/2405.15793">SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (Yang et al. 2024)</a></li>
                                   <li><a href="https://arxiv.org/abs/2410.20285">SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement (Antoniades et al. 2024)</a></li>
                               </ul>
                           </td>
-                <td>Homework 2 <b><font color="red">due</font></b></td>
+                <td>
+                    <span class="deadline">Homework 2 due</span>
+                    
+                </td>
+
               </tr>
-              <tr>
+              <tr class="no-class">
                 <td> </td>
                 <td>Mon Feb 17</td>
-                <td>President's day - no classes</td>
+                <td>President's Day - No classes</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td> 12 </td>
                 <td>Fri Feb 21</td>
-                <td><font color="green">Midterm Progress Presentations</font></td>
+                <td class="presentation">Midterm Progress Presentations</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td> 13 </td>
                 <td>Mon Feb 24</td>
-                <td><font color="green">Midterm Progress Presentations</font></td>
+                <td class="presentation">Midterm Progress Presentations</td>
                 <td></td>
-                <td>Midterm Progress Presentation submission to Gradescope</td>
+                <td><span class="deadline">Midterm Progress Presentation submission to Gradescope</span></td>
+
               </tr>
               <tr>
                 <td> 14 </td>
                 <td>Fri Feb 28</td>
-                <td><font color="blue">Invited Talk on Agent Orchestration Frameworks (Autogen)</font></td>
-                <td>
+                <td class="guest-lecture-cell">
+                    <span class="lecture-title">Agent Orchestration Frameworks</span>
+                    <span class="lecture-subtitle">(Guest Lecture: Chi Wang, Autogen)</span>
+                </td>
+                    <td>
                               <ul class="reading-list">
                                   <li><a href="https://arxiv.org/abs/2308.08155">AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation (Wu et al. 2023)</a></li>
                               </ul>
@@ -344,15 +427,21 @@
               <tr>
                 <td> 18 </td>
                 <td>Fri Mar 14</td>
-                <td><font color="blue">Invited Talk</font></td>
+                 <td class="guest-lecture-cell">
+                    <span class="lecture-title">Guest Lecture</span>
+                </td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td> 19 </td>
                 <td>Wed Mar 19</td>
-                <td><font color="green">Final Project Poster Presentation</font></td>
-                <td>Project Final Report <b><font color="red">due</font></b></td>
+                <td class="presentation">Final Project Poster Presentation</td>
+                <td></td>
+                <td>
+                    <span class="deadline">Project Final Report due Mar 17</span>
+                </td>
+
               </tr>
             </tbody>
           </table>
